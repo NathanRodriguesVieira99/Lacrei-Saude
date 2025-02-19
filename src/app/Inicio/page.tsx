@@ -1,5 +1,7 @@
 "use client";
 
+import { HomePage } from "@/Pages/HomePage";
+
 export default function Inicio() {
-  return <h1>HOME PAGE</h1>;
+  return <HomePage />;
 }
