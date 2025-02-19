@@ -61,16 +61,14 @@ export const Footer = () => {
         </SocialMediaLinksList>
       </SocialMediaLinks>
       <ScrollUpButtonContainer>
-        <Link href={"/Inicio"}>
-          <ScrollUpButton onClick={scrollUp}>
-            <Image
-              src={ArrowUpIcon}
-              alt="Voltar ao Topo"
-              width={24}
-              height={24}
-            />
-          </ScrollUpButton>
-        </Link>
+        <ScrollUpButton onClick={scrollUp}>
+          <Image
+            src={ArrowUpIcon}
+            alt="Voltar ao Topo"
+            width={24}
+            height={24}
+          />
+        </ScrollUpButton>
       </ScrollUpButtonContainer>
     </FooterContainer>
   );
