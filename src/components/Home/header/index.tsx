@@ -9,9 +9,12 @@ import {
   LogoContainer,
   LogoLsContainer,
 } from "./styles";
+import { GlobalStyle } from "@/styles/global";
 
 export const Header = () => {
   return (
+    <>
+     <GlobalStyle />
     <HeaderContainer>
       <HeaderLogo>
         <LogoLsContainer>
@@ -31,5 +34,7 @@ export const Header = () => {
       </HeaderLogo>
       <Buttons />
     </HeaderContainer>
+    </>
+   
   );
 };
