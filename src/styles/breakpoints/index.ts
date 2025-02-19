@@ -2,13 +2,19 @@
 
 export const breakpoints = {
   mobile: {
-    sm: "22.5rem", // 360px 
-    md: "23.4375rem", // 375px 
-    lg: "45rem", // 720px 
+    sm: "23.4375rem", // 375px
+    md: "26.5625rem", // 425px
+    lg: "48rem", // 768px
+  },
+  tablet: {
+    sm: "64rem", // 1024px
+    md: "72rem", // 1152px
+    lg: "80rem", // 1280px
   },
   desktop: {
-    sm: "85.375rem", // 1366px 
-    md: "90rem", // 1440px 
-    lg: "120rem", // 1920px 
+    sm: "90rem", // 1440px
+    md: "96rem", // 1536px
+    lg: "105rem", // 1680px
+    xl: "120rem", // 1920px
   },
 };
