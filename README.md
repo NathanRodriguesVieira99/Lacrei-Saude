@@ -2,11 +2,11 @@
 Esse projeto envolve a criação de um site para o desafio técnico da ONG Lacrei Saúde, sendo uma aplicação responsiva e seguindo as melhores práticas eu me desafiei para reproduzir ao máximo meus conhecimentos.
 
 ## Tecnologias utilizadas:
-- NextJs
-- Typescript
-- Jest
-- React Testing Library
-- Styled-components 
+- NextJs 🌐
+- Typescript 🟦
+- Jest 🧪
+- React Testing Library  🦉
+- Styled-components 💅
 
 
 ## Como rodar o projeto:
