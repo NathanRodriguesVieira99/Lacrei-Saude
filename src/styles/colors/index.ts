@@ -11,5 +11,6 @@ export const colors = {
   },
   text: {
     accent400: "#018762",
+    systemGray70: "#737373",
   },
 };
