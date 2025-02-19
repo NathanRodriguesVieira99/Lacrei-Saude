@@ -33,6 +33,15 @@ export const HeaderItens = styled.div`
 export const Icons = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media ${media.mobile.lg} {
+    gap: 0.9rem;
+    margin-left: -4rem;
+  }
+
+  @media ${media.desktop.sm} {
+    gap: 3rem;
+  }
 `;
 
 export const MobileButtonContainer = styled.div`
@@ -41,34 +50,21 @@ export const MobileButtonContainer = styled.div`
 
 export const MobileButton = styled.button`
   border: none;
+  @media ${media.desktop.md}, ${media.desktop.lg}, ${media.desktop.xl} {
+    display: none;
+  }
+
+  @media ${media.tablet.sm}, ${media.tablet.md}, ${media.tablet.lg} {
+    display: none;
+  }
 `;
 
 export const MobileButtonIcon = styled.div`
-  @media ${media.mobile.lg} {
-    display: none;
-  }
-  @media ${media.desktop.sm} {
-    display: none;
-  }
-  @media ${media.desktop.md} {
-    display: none;
-  }
+  display: flex;
 `;
 
 export const DesktopButtonContainer = styled.div`
   display: flex;
-  @media ${media.mobile.sm} {
-    display: none;
-  }
-  @media ${media.mobile.md} {
-    display: none;
-  }
-  @media ${media.mobile.lg} {
-    display: block;
-  }
-  @media ${media.desktop.sm} {
-    display: block;
-  }
 `;
 
 export const DesktopButton = styled.button`
@@ -83,6 +79,22 @@ export const DesktopButton = styled.button`
 
   &:hover {
     background-color: ${colors.hover.accent100};
+  }
+
+  @media ${media.mobile.sm},
+    (min-width: 376px) and (max-width: 425px),
+    ${media.mobile.md},
+    ${media.mobile.lg} {
+    display: none;
+  }
+
+  @media ${media.tablet.sm},
+    ${media.tablet.md},
+    ${media.tablet.lg} ${media.desktop.sm},
+    ${media.desktop.md},
+    ${media.desktop.lg},
+    ${media.desktop.xl} {
+    display: block;
   }
 `;
 

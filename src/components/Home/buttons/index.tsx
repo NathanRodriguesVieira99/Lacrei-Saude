@@ -50,6 +50,7 @@ export const Buttons = () => {
                   width={20}
                   height={21}
                   style={{ borderRadius: "50%" }}
+                  priority
                 />
               </ProfilePic>
               <Image
@@ -57,6 +58,7 @@ export const Buttons = () => {
                 alt="Acessar Perfil"
                 width={24}
                 height={24}
+                priority
               />
             </ProfileContainer>
           </ProfileButton>

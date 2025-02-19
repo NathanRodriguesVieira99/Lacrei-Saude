@@ -14,27 +14,28 @@ import { GlobalStyle } from "@/styles/global";
 export const Header = () => {
   return (
     <>
-     <GlobalStyle />
-    <HeaderContainer>
-      <HeaderLogo>
-        <LogoLsContainer>
-          <Image
-            src={LogoLs}
-            fill
-            alt="Logo Lacrei Saúde"
-          />
-        </LogoLsContainer>
-        <LogoContainer>
-          <Image
-            src={Logo}
-            fill
-            alt="Logo Lacrei Saúde"
-          />
-        </LogoContainer>
-      </HeaderLogo>
-      <Buttons />
-    </HeaderContainer>
+      <GlobalStyle />
+      <HeaderContainer>
+        <HeaderLogo>
+          <LogoLsContainer>
+            <Image
+              src={LogoLs}
+              layout="fill"
+              alt="Logo Lacrei Saúde"
+              priority
+            />
+          </LogoLsContainer>
+          <LogoContainer>
+            <Image
+              src={Logo}
+              layout="fill"
+              alt="Logo Lacrei Saúde"
+              priority
+            />
+          </LogoContainer>
+        </HeaderLogo>
+        <Buttons />
+      </HeaderContainer>
     </>
-   
   );
 };

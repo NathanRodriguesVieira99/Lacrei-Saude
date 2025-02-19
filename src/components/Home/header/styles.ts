@@ -22,7 +22,6 @@ export const HeaderContainer = styled.div`
     padding: 1.225rem 0.1rem;
     width: 75%;
     margin-left: 4.5rem;
-    
   }
   @media ${media.desktop.sm} {
     padding: 1.525rem 0.5rem;
@@ -36,8 +35,6 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-
-
 export const HeaderLogo = styled.div`
   display: flex;
   gap: 0.188rem;
@@ -48,6 +45,11 @@ export const LogoLsContainer = styled.div`
   width: 100%;
   height: 1.875rem;
   position: relative;
+
+  @media (min-width: 376px) and (max-width: 425px) {
+    display: none;
+  }
+
   @media ${media.mobile.sm}, ${media.mobile.md}, ${media.mobile.lg} {
     display: none;
   }
@@ -94,4 +96,3 @@ export const LogoContainer = styled.div`
     height: 70px;
   }
 `;
-
