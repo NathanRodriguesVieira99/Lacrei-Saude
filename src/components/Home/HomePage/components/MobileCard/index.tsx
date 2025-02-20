@@ -9,7 +9,7 @@ import {
   MobileCardText,
 } from "./styles";
 
-export const MobileCardComponent = () => {
+const MobileCardComponent = () => {
   return (
     <Suspense fallback={<div>Carregando...</div>}>
       <MobileCardContainer>
@@ -31,3 +31,5 @@ export const MobileCardComponent = () => {
     </Suspense>
   );
 };
+
+export default MobileCardComponent;

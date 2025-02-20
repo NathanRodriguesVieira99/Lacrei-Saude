@@ -1,12 +1,17 @@
 import { Suspense, lazy } from "react";
 
 import { HomePageContainer } from "./styles";
-import { HeroComponent } from "./components/Hero";
 
-export const HomePage = () => {
+const LazyHeroComponent = lazy(() => import("./components/Hero"));
+
+const HomePage = () => {
   return (
     <HomePageContainer>
-      <HeroComponent />
+      <Suspense fallback={<div>Carregando...</div>}>
+        <LazyHeroComponent />
+      </Suspense>
     </HomePageContainer>
   );
 };
+
+export default HomePage;

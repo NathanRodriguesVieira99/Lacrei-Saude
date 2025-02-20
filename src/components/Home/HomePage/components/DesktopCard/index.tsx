@@ -6,7 +6,7 @@ import {
   ImageDesktopCardContainer,
 } from "./styles";
 
-export const DesktopCardComponent = () => {
+ const DesktopCardComponent = () => {
   return (
     <DesktopCardContainer>
       <DesktopCard>
@@ -20,3 +20,5 @@ export const DesktopCardComponent = () => {
     </DesktopCardContainer>
   );
 };
+
+export default DesktopCardComponent

@@ -1,7 +1,11 @@
 "use client";
 
-import { HomePage } from "@/components/Home/HomePage";
+import { lazy } from "react";
+
+const LazyHomePage = lazy(() => import("@/components/Home/HomePage"));
+
+
 
 export default function Inicio() {
-  return <HomePage />;
+  return <LazyHomePage />;
 }
