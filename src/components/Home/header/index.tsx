@@ -10,32 +10,35 @@ import {
   LogoLsContainer,
 } from "./styles";
 import { GlobalStyle } from "@/styles/global";
+import Link from "next/link";
 
 export const Header = () => {
   return (
     <>
       <GlobalStyle />
+          <Link href={"/Inicio"}>
       <HeaderContainer>
         <HeaderLogo>
-          <LogoLsContainer>
-            <Image
-              src={LogoLs}
-              layout="fill"
-              alt="Logo Lacrei Saúde"
-              priority
-            />
-          </LogoLsContainer>
-          <LogoContainer>
-            <Image
-              src={Logo}
-              layout="fill"
-              alt="Logo Lacrei Saúde"
-              priority
-            />
-          </LogoContainer>
+            <LogoLsContainer>
+              <Image
+                src={LogoLs}
+                layout="fill"
+                alt="Logo Lacrei Saúde"
+                priority
+              />
+            </LogoLsContainer>
+            <LogoContainer>
+              <Image
+                src={Logo}
+                layout="fill"
+                alt="Logo Lacrei Saúde"
+                priority
+              />
+            </LogoContainer>
         </HeaderLogo>
         <Buttons />
       </HeaderContainer>
+          </Link>
     </>
   );
 };

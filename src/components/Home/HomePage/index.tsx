@@ -1,9 +1,12 @@
+import { Suspense, lazy } from "react";
+
 import { HomePageContainer } from "./styles";
+import { HeroComponent } from "./components/Hero";
 
 export const HomePage = () => {
   return (
     <HomePageContainer>
-      <h1>HomePage</h1>
+      <HeroComponent />
     </HomePageContainer>
   );
 };

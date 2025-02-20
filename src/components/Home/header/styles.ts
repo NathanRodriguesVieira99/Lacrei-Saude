@@ -11,6 +11,9 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   height: auto;
+  cursor: pointer;
+
+
 
   @media ${media.mobile.md} {
     padding: 1.125rem 0.5rem;
