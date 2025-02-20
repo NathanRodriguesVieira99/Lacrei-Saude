@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   width: 90vw;
+  height: 15px;
   padding: 1rem 0.4rem;
   margin: 0.9rem;
 
@@ -33,110 +34,27 @@ export const FooterContainer = styled.footer`
     max-width: 75%;
     width: 75vw;
     margin: auto;
+    
   }
 
   @media ${media.desktop.md} {
     max-width: 95%;
     width: 70vw;
     margin: auto;
+   
   }
 `;
 
 export const FooterHr = styled.div`
   width: 100%;
   content: "";
-
   border-top: 1px solid ${colors.border.border_accent400};
-`;
 
-export const FooterLinksList = styled.div`
-  margin-top: 0.8rem;
-`;
-export const LinksList = styled.ul`
-  display: flex;
-  flex-flow: column wrap;
-  cursor: pointer;
-
-  @media ${media.mobile.lg} {
-    flex-flow: column wrap;
-    width: 100%;
-    li {
-      width: 285px;
-      margin-left: 200px;
-      margin-bottom: 15px;
-    }
+  @media  (min-width: 376px) and (max-width: 425px){
+    width: 125vw;
   }
-  @media ${media.tablet.sm} {
-    flex-flow: row wrap;
-
-    li {
-      width: 135px;
-      margin-left: 135px;
-    }
-  }
-  @media ${media.tablet.lg} {
-    flex-flow: row wrap;
-
-    li {
-      width: 125px;
-      margin-left: 100px;
-    }
-  }
-`;
-
-export const List = styled.li`
-  padding: 0.5rem;
-`;
-
-export const ListItens = styled.a`
-  text-decoration: none;
-  color: ${colors.text.systemGray70};
-`;
-
-export const SocialMediaLinks = styled.div`
-  margin-top: 0.8rem;
-  display: flex;
-
-  @media ${media.mobile.lg} {
-    width: 100%;
-    margin-left: 350px;
-  }
-`;
-
-export const SocialMediaLinksList = styled.ul`
-  display: flex;
-  flex-flow: row wrap;
-  cursor: pointer;
-  gap: 0.9rem;
-`;
-
-export const ListSocial = styled.li``;
-
-export const SocialItens = styled.a``;
-
-export const ScrollUpButtonContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 4rem;
-`;
-
-export const ScrollUpButton = styled.button`
-  display: flex;
-  border: 2px solid;
-  border-color: ${colors.text.accent400};
-  border-radius: 10%;
-  width: 45px;
-  height: 45px;
-  padding: 0.5rem;
-  margin: auto;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-
-  @media ${media.mobile.lg} {
-    display: none;
-  }
-  @media ${media.tablet.lg} {
-    display: none;
+  @media ${media.mobile.md}{
+    width: 120vw;
   }
 `;
 
@@ -162,3 +80,9 @@ export const FooterLogoImage = styled.div`
     display: block;
   }
 `;
+
+
+
+
+
+
