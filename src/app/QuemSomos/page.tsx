@@ -1,7 +1,8 @@
 "use client";
+import { lazy } from "react";
 
-import { QuemSomos } from "@/components/QuemSomos";
+const LazyQuemSomosPage = lazy(() => import("@/components/QuemSomos"));
 
 export default function QuemSomosPage() {
-  return <QuemSomos />;
+  return <LazyQuemSomosPage />;
 }

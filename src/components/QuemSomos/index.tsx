@@ -5,7 +5,7 @@ export const QuemSomos = () => {
   return (
     <QuemSomosPageContainer>
       <FirstContainer />
-      
     </QuemSomosPageContainer>
   );
 };
+export default QuemSomos;
