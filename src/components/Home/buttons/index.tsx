@@ -31,6 +31,7 @@ export const Buttons = () => {
                   alt="Ajuda"
                   width={24}
                   height={24}
+                  loading="eager"
                 />
               </MobileButtonIcon>
             </MobileButton>
@@ -51,6 +52,7 @@ export const Buttons = () => {
                   height={21}
                   style={{ borderRadius: "50%" }}
                   priority
+                  loading="eager"
                 />
               </ProfilePic>
               <Image
@@ -59,6 +61,7 @@ export const Buttons = () => {
                 width={24}
                 height={24}
                 priority
+                loading="eager"
               />
             </ProfileContainer>
           </ProfileButton>

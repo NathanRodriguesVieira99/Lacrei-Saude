@@ -19,6 +19,7 @@ export const SocialMediaLinkslistComponent = () => {
                 alt={link.alt}
                 width={32}
                 height={32}
+                loading="eager"
               />
             </SocialItens>
           </ListSocial>

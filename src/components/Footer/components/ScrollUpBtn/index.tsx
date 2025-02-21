@@ -9,6 +9,7 @@ export const ScrollUpBtn = () => {
         <Image
           src={ArrowUpIcon}
           alt="Voltar ao Topo"
+          loading="eager"
           width={24}
           height={24}
         />

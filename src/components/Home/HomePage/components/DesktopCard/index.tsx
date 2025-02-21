@@ -6,14 +6,15 @@ import {
   ImageDesktopCardContainer,
 } from "./styles";
 
- const DesktopCardComponent = () => {
+const DesktopCardComponent = () => {
   return (
     <DesktopCardContainer>
       <DesktopCard>
         <ImageDesktopCardContainer>
           <Image
             src={DesktopCardImg}
-            alt=""
+            alt="Imagem do Card"
+            loading="eager"
           />
         </ImageDesktopCardContainer>
       </DesktopCard>
@@ -21,4 +22,4 @@ import {
   );
 };
 
-export default DesktopCardComponent
+export default DesktopCardComponent;

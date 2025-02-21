@@ -16,6 +16,7 @@ export const Footer = () => {
             src={FooterLogo}
             alt="Logo Lacrei Saúde"
             priority
+            loading="eager"
             width={166}
             height={48}
           />

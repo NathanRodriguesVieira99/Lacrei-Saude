@@ -16,28 +16,33 @@ const Header = () => {
   return (
     <>
       <GlobalStyle />
-      <Link href={"/Inicio"} aria-label="Logo Lacrei Saúde">
-          <HeaderContainer>
-            <HeaderLogo>
-              <LogoLsContainer>
-                <Image
-                  src={LogoLs}
-                  layout="fill"
-                  alt="Logo Lacrei Saúde"
-                  priority
-                />
-              </LogoLsContainer>
-              <LogoContainer>
-                <Image
-                  src={Logo}
-                  layout="fill"
-                  alt="Logo Lacrei Saúde"
-                  priority
-                  />
-              </LogoContainer>
-            </HeaderLogo>
-            <Buttons />
-          </HeaderContainer>
+      <Link
+        href={"/Inicio"}
+        aria-label="Logo Lacrei Saúde"
+      >
+        <HeaderContainer>
+          <HeaderLogo>
+            <LogoLsContainer>
+              <Image
+                src={LogoLs}
+                layout="fill"
+                alt="Logo Lacrei Saúde"
+                priority
+                loading="eager"
+              />
+            </LogoLsContainer>
+            <LogoContainer>
+              <Image
+                src={Logo}
+                layout="fill"
+                alt="Logo Lacrei Saúde"
+                priority
+                loading="eager"
+              />
+            </LogoContainer>
+          </HeaderLogo>
+          <Buttons />
+        </HeaderContainer>
       </Link>
     </>
   );

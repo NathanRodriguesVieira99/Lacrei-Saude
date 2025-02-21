@@ -23,6 +23,7 @@ export const MobileInputComponent = () => {
           <Image
             src={SearchIcon}
             alt="Pesquisar"
+            loading="eager"
           />
         </MobileInputButton>
       </MobileInputButtonContainer>

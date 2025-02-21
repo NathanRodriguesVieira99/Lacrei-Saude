@@ -25,6 +25,7 @@ const MobileCardComponent = () => {
             alt="Imagem de um doutor"
             width={82}
             height={126}
+            loading="eager"
           />
         </ImageMobileCardContainer>
       </MobileCardContainer>
