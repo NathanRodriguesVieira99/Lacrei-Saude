@@ -4,6 +4,7 @@ import FooterLogo from "../../../public/logos/logo-lacrei-saude2.svg";
 import { FooterLinkListComponent } from "./components/FooterLinksList";
 import { SocialMediaLinkslistComponent } from "./components/SocialMediaLinksList";
 import { FooterContainer, FooterHr, FooterLogoImage } from "./styles";
+import { ScrollUpBtn } from "./components/ScrollUpBtn";
 
 export const Footer = () => {
   return (
@@ -22,6 +23,7 @@ export const Footer = () => {
       </div>
       <FooterLinkListComponent />
       <SocialMediaLinkslistComponent />
+      <ScrollUpBtn />
     </FooterContainer>
   );
 };
