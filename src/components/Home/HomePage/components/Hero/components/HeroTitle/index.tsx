@@ -6,7 +6,7 @@ import {
   HeroParagraph,
 } from "./styles";
 
-export const HeroTitleComponent = () => {
+ const HeroTitleComponent = () => {
   return (
     <>
       <HeroTitleContainer>
@@ -22,3 +22,4 @@ export const HeroTitleComponent = () => {
     </>
   );
 };
+export default HeroTitleComponent
