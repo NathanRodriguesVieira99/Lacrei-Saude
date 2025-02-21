@@ -8,7 +8,7 @@ import {
 export const QuemSomosBtn = () => {
   return (
     <QuemSomosButtonContainer>
-      <Link href={"/QuemSomos"}>
+      <Link href={"/QuemSomos"} aria-label="Botão Quem Somos ">
         <QuemSomosButtonDiv>
           <QuemSomosButton>Quem Somos</QuemSomosButton>
         </QuemSomosButtonDiv>
