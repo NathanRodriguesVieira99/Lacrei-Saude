@@ -77,3 +77,7 @@ npm i -g vercel
 ## 🔎 Link de acesso ao projeto
 
 https://lacrei-saude-ten.vercel.app/Inicio
+
+## 🧪 Cobertura de testes
+
+![Resultado dos Testes](./src/assets/tests_results.png)
