@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { QuemSomosBtn } from "@/components/QuemSomos/components/QuemSomosBtn";
 import { MobileInputComponent } from "../MobileInput";
-import { HeroTitleComponent } from "./components/HeroTitle";
+import HeroTitleComponent from "./components/HeroTitle";
 import { HeroContainer } from "./styles";
 
 const LazyDesktopCardComponent = lazy(() => import("../DesktopCard"));
